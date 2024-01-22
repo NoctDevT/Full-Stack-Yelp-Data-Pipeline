@@ -9,6 +9,7 @@
     "all": "concurrently \"npm run start\" \"npm run scrape\""
   },
   "dependencies": {
+    "concurrently": "^8.2.2",
     "2captcha": "^3.0.7",
     "axios": "^1.6.5",
     "cheerio": "^1.0.0-rc.12",
@@ -23,7 +24,6 @@
     "@types/node": "^14.0.0",
     "@types/pg": "^8.10.9",
     "@types/random-useragent": "^0.3.3",
-    "concurrently": "^8.2.2",
     "express": "^4.18.2",
     "nodemon": "^3.0.3",
     "pg": "^8.11.3",
