@@ -1,5 +1,6 @@
 services:
   scraper:
+    user: "root"
     container_name: yelp_scraper
     image: yelp_scraper:1.0.0
     build:
