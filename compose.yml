@@ -1,8 +1,12 @@
 services:
   scraper:
-    user: "root"
     container_name: yelp_scraper
     image: yelp_scraper:1.0.0
+    volumes:
+      - /var/tmp/playwright:/tmp
+    cap_drop:
+      - ALL  # Drops all capabilities
+    read_only: true
     build:
       context: ./data_scrape
       dockerfile: scrape.dockerfile
